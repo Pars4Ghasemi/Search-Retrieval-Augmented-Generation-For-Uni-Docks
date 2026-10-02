@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+
+# Secrets / local config
+.env
+
+# Local data (your documents and the search index)
+data/docs/*
+!data/docs/.gitkeep
+data/chroma/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
