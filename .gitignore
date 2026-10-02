@@ -9,7 +9,6 @@ __pycache__/
 # Local data (your documents and the search index)
 data/docs/*
 !data/docs/.gitkeep
-data/chroma/
 
 # OS / editor
 .DS_Store

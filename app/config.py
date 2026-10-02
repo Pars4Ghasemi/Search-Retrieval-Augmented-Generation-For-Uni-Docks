@@ -12,5 +12,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 OLLAMA_HOST = os.getenv("OLLAMA_HOST", "http://localhost:11434")
 CHAT_MODEL = os.getenv("CHAT_MODEL", "llama3.2:1b")
 EMBED_MODEL = os.getenv("EMBED_MODEL", "nomic-embed-text")
+EMBED_DIM = int(os.getenv("EMBED_DIM", "768"))  # must match EMBED_MODEL's output size
 DOCS_DIR = BASE_DIR / os.getenv("DOCS_DIR", "data/docs")
-CHROMA_DIR = BASE_DIR / os.getenv("CHROMA_DIR", "data/chroma")
+DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://localhost/unidocs")
